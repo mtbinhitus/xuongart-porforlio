@@ -1,0 +1,42 @@
+.youtube-modal {
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    height: fit-content;
+    overflow-x: hidden;
+    overflow-y: auto;
+    // outline: 0;
+
+    .modal {
+        width: 100%;
+        height: fit-content;
+        max-width: 1440px;
+        padding: 30px;
+        z-index: 100;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+
+        .modal__header {
+            & > img {
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            p {
+                color: white;
+            }
+        }
+
+        .image-detail {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

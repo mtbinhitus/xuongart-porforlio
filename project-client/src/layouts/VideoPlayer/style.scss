@@ -1,0 +1,100 @@
+.detail-video-modal {
+    height: fit-content;
+    .modal-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        width: fit-content;
+        margin: 0 auto;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .video-player-page {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            min-height: 100vh;
+            width: 100vw;
+
+            background-color: rgba(0, 0, 0, 0.934);
+
+            .header {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 15%;
+                padding-right: 20px;
+                min-height: 100px;
+
+                .btn_close {
+                    height: 50px;
+                    width: 50px;
+
+                    border-radius: 5px;
+                    padding: 7px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgba(88, 88, 88, 0.805);
+                    }
+                }
+            }
+
+            .video-wrapper {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                height: fit-content;
+
+                padding: 20px;
+
+                .video-div {
+                    flex: 1;
+
+                    iframe {
+                        height: 100%;
+                        border-radius: 10px;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    }
+                }
+
+                .infor-wrapper {
+                    width: 30%;
+                    padding-left: 100px;
+                }
+            }
+
+            @media (max-width: 1440px) {
+                .video-wrapper {
+                    flex-direction: column;
+                    height: fit-content;
+                    flex: 1;
+                    width: 100vw;
+
+                    .video-div {
+                        height: fit-content;
+                        flex: 0;
+
+                        iframe {
+                            height: 50vw;
+                        }
+                    }
+
+                    .infor-wrapper {
+                        width: 100%;
+                        padding-left: 0;
+                        margin-top: 50px;
+
+                        p {
+                            word-wrap: break-word; /* sử dụng thuộc tính word-wrap */
+                            overflow-wrap: break-word; /* sử dụng thuộc tính overflow-wrap */
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

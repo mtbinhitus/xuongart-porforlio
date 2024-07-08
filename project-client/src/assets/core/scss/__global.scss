@@ -1,0 +1,127 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Changa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --color-background: #fff;
+    --color-text-default: #000;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 768px) {
+        font-size: 8px !important;
+    }
+}
+
+body {
+    // font-family: 'acumin-pro', 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    text-rendering: optimizeSpeed;
+    color: var(--color-text-default);
+    background: var(--color-background) !important;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+// hidden arrows for input elements
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro'), url('../../../../public/fonts/Acumin-RPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Acumin Pro Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Italic'), url('../../../../public/fonts/Acumin-ItPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Bold'), url('../../../../public/fonts/Acumin-BdPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Acumin Pro Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Bold Italic'), url('../../../../public/fonts/Acumin-BdItPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue'), url('../../../../public/fonts/helveticaneue.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Helvetsica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('../../../../public/fonts/Helvetica.ttf') format('ttf');
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+
+    // border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    // border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
